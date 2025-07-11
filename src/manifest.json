@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "My reading list",
-  "version": "1.3.1",
+  "version": "1.3.3",
   "description": "Quickly save pages to the Firefox sidebar, sync with your Firefox account — or not",
   "permissions": [
     "storage",

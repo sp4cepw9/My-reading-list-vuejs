@@ -45,6 +45,11 @@ body {
   padding: 0;
 }
 
+.selectable {
+  user-select: text!important;
+  cursor: text;
+}
+
 a {
   color: var(--text-color);
 }

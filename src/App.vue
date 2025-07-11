@@ -147,7 +147,7 @@
     </li>
   </ul>
   <div v-if="list.length" class="flex justify-end">
-    <small>Created and designed by <a href="mailto:hi@sp4ce.pw" class="font-bold hover:underline hover:decoration-1">hi@sp4ce.pw</a></small>
+    <small class="selectable">Created and designed by <a href="https://sp4ce.pw" class="font-bold hover:text-rose-600!">sp4ce</a></small>
   </div>
 </template>
 
