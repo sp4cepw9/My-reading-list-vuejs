@@ -152,10 +152,12 @@
 </template>
 
 <style scoped>
+
   #theme {
     background-image: var(--background-pattern);
     background-repeat: repeat-x;
   }
+
   #add {
     background-color: var(--third-color);
     color: #ffffff;
@@ -258,4 +260,5 @@
     background-color: var(--confirmDelete);
     color: #fff;
   }
+  
 </style>
