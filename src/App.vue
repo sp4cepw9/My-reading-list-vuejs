@@ -86,9 +86,9 @@
       },
       openTab(url, event) {
         if (event.ctrlKey || event.metaKey || event.button === 1) return
-        event.preventDefault();
+        event.preventDefault()
         browser.tabs.query({ active: true, currentWindow: true }).then(tabs => {
-          browser.tabs.update(tabs[0].id, { url });
+          browser.tabs.update(tabs[0].id, { url })
         });
       },
       clearSearch() {
