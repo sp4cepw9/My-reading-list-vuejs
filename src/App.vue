@@ -129,7 +129,7 @@
       </svg>
     </button>
   </div>
-  <div class="my-4 flex justify-end">
+  <div v-if="list.length" class="my-4 flex justify-end">
     {{ searchText.trim() ? `${filteredList.length} result(s) out of ${list.length}` : `Number of items : ${list.length}` }}
   </div>
   <ul id="list">
@@ -146,6 +146,9 @@
       <button class="delete" @click="confirmDelete($event, item)">Delete</button>
     </li>
   </ul>
+  <div v-if="list.length" class="flex justify-end">
+    <small>Created and designed by <a href="mailto:hi@sp4ce.pw" class="font-bold hover:underline hover:decoration-1">hi@sp4ce.pw</a></small>
+  </div>
 </template>
 
 <style scoped>
