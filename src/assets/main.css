@@ -6,7 +6,7 @@
   --secondary-color-hover: #4d4d4d;
   --third-color: #5a4cb2;
   --third-color-hover: #6758cc;
-  --text-color: #ffffff;
+  --text-color: #f5f5f5;
   --text-color-reverse: #000;
   --list-background-color: var(--secondary-color);
   --list-background-color-hover: var(--third-color);
@@ -59,7 +59,7 @@ a {
 }
 
 .opacity {
-  opacity: .8;
+  opacity: .7;
 }
 
 .btn {

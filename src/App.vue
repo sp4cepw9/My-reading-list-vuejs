@@ -1,5 +1,10 @@
 <script>
+  import TimeAgo from './components/TimeAgo.vue';
+
   export default {
+    components: {
+      TimeAgo
+    },
     data() {
       return {
         theme: "",
@@ -140,7 +145,7 @@
         </div>
         <div class="informations">
           <div class="title">{{ item.title }}</div>
-          <div class="url">{{ item.url }}</div>
+          <div class="url"><TimeAgo :timestamp="item.date" /> | <span class="opacity">{{ item.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') }}</span></div>
         </div>
       </a>
       <button class="delete" @click="confirmDelete($event, item)">Delete</button>
@@ -235,7 +240,6 @@
       font-weight: 600;
     }
     .url {
-      opacity: 0.6;
       font-size: 0.9em;
       text-overflow: ellipsis;
       overflow: hidden;
